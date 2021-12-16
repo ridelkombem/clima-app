@@ -68,10 +68,12 @@ class _LocationScreenState extends State<LocationScreen> {
                     },
                     child: const Icon(
                       Icons.near_me,
+                      color: Colors.white,
                       size: 50.0,
                     ),
                   ),
                   TextButton(
+                    style: TextButton.styleFrom(primary: Colors.white),
                     onPressed: () async{
                       var typedName= await Navigator.push(
                         context,
